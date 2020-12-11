@@ -1,5 +1,6 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
+import NavLinkItem from './components/NavLinkItem'
 import CryptoListPage from './pages/CryptoListPage'
 import CurrenciesListPage from './pages/CurrenciesListPage'
 import IndexesListPage from './pages/IndexesListPage'
@@ -8,8 +9,17 @@ import MarketsListPage from './pages/MarketsListPage'
 
 function App() {
   return (
-    <div>
-      <h1>Market Landing Page </h1>
+    <div className="container">
+      <div className="col-md-12">
+        <ul className="nav">
+          <NavLinkItem to="/crypto" text="Crypto"/>
+          <NavLinkItem to="/currencies" text="Currencies"/>
+          <NavLinkItem to="/indexes" text="Indexes"/>
+          <NavLinkItem to="/markets" text="Markets"/>
+
+        </ul>
+      </div>
+
       <Switch>
         <Route path="/crypto">
           <CryptoListPage />
