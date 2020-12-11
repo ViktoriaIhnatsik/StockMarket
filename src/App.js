@@ -1,6 +1,7 @@
 import React from 'react'
 import {Switch, Route} from 'react-router-dom'
 import NavLinkItem from './components/NavLinkItem'
+import CryptoDetailPage from './pages/CryptoDetailPage'
 import CryptoListPage from './pages/CryptoListPage'
 import CurrenciesListPage from './pages/CurrenciesListPage'
 import IndexesListPage from './pages/IndexesListPage'
@@ -21,6 +22,8 @@ function App() {
       </div>
 
       <Switch>
+        <Route path="/crypto/:id"  component={CryptoDetailPage}></Route>
+
         <Route path="/crypto">
           <CryptoListPage />
         </Route>
@@ -36,6 +39,8 @@ function App() {
         <Route path="/markets">
           <MarketsListPage />
         </Route>
+
+        
       </Switch>
     </div>
   );
