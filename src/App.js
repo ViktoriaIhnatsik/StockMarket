@@ -9,7 +9,7 @@ import MarketsListPage from './pages/MarketsListPage'
 function App() {
   return (
     <div>
-      <h1>Market Landing Page</h1>
+      <h1>Market Landing Page </h1>
       <Switch>
         <Route path="/crypto">
           <CryptoListPage />
