@@ -6,6 +6,7 @@ import CryptoListPage from './pages/CryptoListPage'
 import CurrenciesListPage from './pages/CurrenciesListPage'
 import IndexesListPage from './pages/IndexesListPage'
 import MarketsListPage from './pages/MarketsListPage'
+import CurrenciesDetailPage from './pages/CurrenciesDetailPage'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
       <Switch>
         <Route path="/crypto/:id"  component={CryptoDetailPage}></Route>
+        <Route path="/currencies/:id"  component={CurrenciesDetailPage}></Route>
 
         <Route path="/crypto">
           <CryptoListPage />
