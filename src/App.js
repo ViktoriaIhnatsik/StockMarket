@@ -11,6 +11,7 @@ import CurrenciesDetailPage from './pages/CurrenciesDetailPage'
 import MarketsCompaniesListPage from './pages/MarketsCompaniesListPage'
 
 import MarketsListPage from './pages/MarketsListPage'
+import MarketsCompaniesDetailPage from './pages/MarketsCompaniesDetailPage'
 
 import IndexesListPage from './pages/IndexesListPage'
 import IndexesDetailPage from './pages/IndexesDetailPage'
@@ -34,7 +35,7 @@ function App() {
         <Route path="/currencies/:id" component={CurrenciesDetailPage}></Route>
         <Route path="/indexes/:id" component={IndexesDetailPage}></Route>
         <Route path="/markets/:companies" component={MarketsCompaniesListPage}></Route>
-        {/* <Route path="/markets/:companies/:id" component={MarketsCompaniesDetailPage}></Route> */}
+        <Route path="/markets/:companies/:id" component={MarketsCompaniesDetailPage}></Route>
 
 
         <Route path="/crypto">
