@@ -1,13 +1,20 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import NavLinkItem from './components/NavLinkItem'
-import CryptoDetailPage from './pages/CryptoDetailPage'
+
 import CryptoListPage from './pages/CryptoListPage'
+import CryptoDetailPage from './pages/CryptoDetailPage'
+
 import CurrenciesListPage from './pages/CurrenciesListPage'
-import IndexesListPage from './pages/IndexesListPage'
-import MarketsListPage from './pages/MarketsListPage'
 import CurrenciesDetailPage from './pages/CurrenciesDetailPage'
+
+import MarketsCompaniesListPage from './pages/MarketsCompaniesListPage'
+
+import MarketsListPage from './pages/MarketsListPage'
+
+import IndexesListPage from './pages/IndexesListPage'
 import IndexesDetailPage from './pages/IndexesDetailPage'
+
 
 
 function App() {
@@ -19,7 +26,6 @@ function App() {
           <NavLinkItem to="/currencies" text="Currencies" />
           <NavLinkItem to="/indexes" text="Indexes" />
           <NavLinkItem to="/markets" text="Markets" />
-
         </ul>
       </div>
 
@@ -27,6 +33,9 @@ function App() {
         <Route path="/crypto/:id" component={CryptoDetailPage}></Route>
         <Route path="/currencies/:id" component={CurrenciesDetailPage}></Route>
         <Route path="/indexes/:id" component={IndexesDetailPage}></Route>
+        <Route path="/markets/:companies" component={MarketsCompaniesListPage}></Route>
+        {/* <Route path="/markets/:companies/:id" component={MarketsCompaniesDetailPage}></Route> */}
+
 
         <Route path="/crypto">
           <CryptoListPage />
