@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch, Route} from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import NavLinkItem from './components/NavLinkItem'
 import CryptoDetailPage from './pages/CryptoDetailPage'
 import CryptoListPage from './pages/CryptoListPage'
@@ -7,6 +7,7 @@ import CurrenciesListPage from './pages/CurrenciesListPage'
 import IndexesListPage from './pages/IndexesListPage'
 import MarketsListPage from './pages/MarketsListPage'
 import CurrenciesDetailPage from './pages/CurrenciesDetailPage'
+import IndexesDetailPage from './pages/IndexesDetailPage'
 
 
 function App() {
@@ -14,17 +15,18 @@ function App() {
     <div className="container">
       <div className="col-md-12">
         <ul className="nav">
-          <NavLinkItem to="/crypto" text="Crypto"/>
-          <NavLinkItem to="/currencies" text="Currencies"/>
-          <NavLinkItem to="/indexes" text="Indexes"/>
-          <NavLinkItem to="/markets" text="Markets"/>
+          <NavLinkItem to="/crypto" text="Crypto" />
+          <NavLinkItem to="/currencies" text="Currencies" />
+          <NavLinkItem to="/indexes" text="Indexes" />
+          <NavLinkItem to="/markets" text="Markets" />
 
         </ul>
       </div>
 
       <Switch>
-        <Route path="/crypto/:id"  component={CryptoDetailPage}></Route>
-        <Route path="/currencies/:id"  component={CurrenciesDetailPage}></Route>
+        <Route path="/crypto/:id" component={CryptoDetailPage}></Route>
+        <Route path="/currencies/:id" component={CurrenciesDetailPage}></Route>
+        <Route path="/indexes/:id" component={IndexesDetailPage}></Route>
 
         <Route path="/crypto">
           <CryptoListPage />
@@ -42,7 +44,7 @@ function App() {
           <MarketsListPage />
         </Route>
 
-        
+
       </Switch>
     </div>
   );
