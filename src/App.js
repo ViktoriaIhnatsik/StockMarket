@@ -34,9 +34,9 @@ function App() {
         <Route path="/crypto/:id" component={CryptoDetailPage}></Route>
         <Route path="/currencies/:id" component={CurrenciesDetailPage}></Route>
         <Route path="/indexes/:id" component={IndexesDetailPage}></Route>
-        <Route path="/markets/:companies" component={MarketsCompaniesListPage}></Route>
         <Route path="/markets/:companies/:id" component={MarketsCompaniesDetailPage}></Route>
-
+        <Route path="/markets/:companies" component={MarketsCompaniesListPage}></Route>
+        
 
         <Route path="/crypto">
           <CryptoListPage />

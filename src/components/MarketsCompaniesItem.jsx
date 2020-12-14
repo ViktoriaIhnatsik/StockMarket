@@ -6,7 +6,7 @@ export default function MarketsCompaniesItem({ marketsCompanies }) {
         <div className="col-md-2 shadow p-3">
             <Link
                 className="btn  btn-block"
-                to={`/markets/companies/${marketsCompanies.ticker}`}>
+                to={`/markets/${marketsCompanies.market}/${marketsCompanies.ticker}`}>
                 {marketsCompanies.name}
             </Link>
         </div>
