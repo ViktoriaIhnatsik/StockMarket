@@ -22,7 +22,7 @@ export default function IndexesDetailPage(props) {
         <div>
             {!indexesItem && <p>Loading</p>}
             {indexesItem && (
-                <div className="container border w-50 mt-5 ">
+                <div className="container  w-50 mt-5 shadow ">
                     <h2>{indexesItem.name}</h2>
                     <p>Market: {indexesItem.market.toUpperCase()}</p>
                     <p>Mtd: {indexesItem.mtd}</p>

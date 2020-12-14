@@ -15,10 +15,10 @@ export default function MarketsCompaniesDetailPage(props) {
     }, [])
 
     return (
-        <div>
+        <div className="container">
             {!companiesItem && <p>Loading</p>}
             {companiesItem &&
-                <div>
+                <div className="container shadow w-50 mt-5">
                     <h2>{companiesItem.name}</h2>
                     <p>Market: {companiesItem.market}</p>
                     <p>Mtd: {companiesItem.mtd}</p>

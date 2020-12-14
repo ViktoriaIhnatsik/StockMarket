@@ -24,8 +24,11 @@ export default function IndexesListPage() {
         <li className="list-inline-item"><strong>+/-</strong></li>
         <li className="list-inline-item"><strong>Price today</strong></li>
       </ul>
-      <div className="row">
+      <div className=" row align-items-center ">
+      <div className="col  align-self-center vertical-align-middle">
+
         {indexesList && (
+
 
           Object.entries(indexesList).map(indexesItem => {
             const key = indexesItem[0]
@@ -36,6 +39,7 @@ export default function IndexesListPage() {
             )
 
           }))}
+      </div>
       </div>
     </div>
   );

@@ -15,11 +15,12 @@ export default function MarketsListPage() {
   }, [])
 
   return (
-    <div>
+    <div className="container">
       <h2>MarketsListPage</h2>
 
       {!marketsList && <p>Loading</p>}
-      {marketsList && Object.entries(marketsList).map(marketsItem => {
+      <div className="row p-5">
+         {marketsList && Object.entries(marketsList).map(marketsItem => {
         const key = marketsItem[0]
         const name = marketsItem[0]
 
@@ -28,6 +29,9 @@ export default function MarketsListPage() {
         )
       })}
 
+      </div>
+
+     
 
     </div>
   );
