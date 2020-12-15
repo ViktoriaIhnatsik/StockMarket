@@ -16,11 +16,13 @@ import MarketsCompaniesDetailPage from './pages/MarketsCompaniesDetailPage'
 import IndexesListPage from './pages/IndexesListPage'
 import IndexesDetailPage from './pages/IndexesDetailPage'
 
+import './styles/background.css'
+
 
 
 function App() {
   return (
-    <div className="container">
+    <div className="container" >
       <div className="col-md-12">
         <ul className="nav">
           <NavLinkItem to="/crypto" text="Crypto" />
@@ -36,7 +38,6 @@ function App() {
         <Route path="/indexes/:id" component={IndexesDetailPage}></Route>
         <Route path="/markets/:companies/:id" component={MarketsCompaniesDetailPage}></Route>
         <Route path="/markets/:companies" component={MarketsCompaniesListPage}></Route>
-        
 
         <Route path="/crypto">
           <CryptoListPage />
@@ -56,7 +57,7 @@ function App() {
 
 
       </Switch>
-    </div>
+        </div>
   );
 }
 
