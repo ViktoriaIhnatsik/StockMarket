@@ -5,3 +5,7 @@ background-color: #c9f5e6f5;
 .row{
     background-color: white;
 }
+
+.btn-block:hover{
+    background-color: #b4e6e7f5;
+}
