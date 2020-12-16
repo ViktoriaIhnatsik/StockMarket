@@ -15,9 +15,11 @@ export default function CurrenciesDetailPage(props) {
     <div>
       {!currenciesItem && <p>Loading</p>}
       {currenciesItem && (
-        <div className="container shadow w-50 mt-5 ">
-          <h2>{currenciesItem.name}</h2>
-          <p>Market: {currenciesItem.market}</p>
+        <div className="container shadow w-50  mt-5 rounded bg-light">
+          
+          <h2 className=" font-weight-bold names">{currenciesItem.name}</h2>
+          <div>
+                   <p>Market: {currenciesItem.market}</p>
           <p>Mtd: {currenciesItem.mtd}</p>
           <p>Price: {currenciesItem.price}</p>
           <p>Today: {currenciesItem.today}</p>
@@ -25,6 +27,8 @@ export default function CurrenciesDetailPage(props) {
           <p>Y3: {currenciesItem.y3}</p>
           <p>Y5: {currenciesItem.y5}</p>
           <p>Ytd: {currenciesItem.ytd}</p>
+          </div>
+   
         </div>
       )}
     </div>

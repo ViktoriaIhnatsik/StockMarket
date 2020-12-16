@@ -4,5 +4,22 @@
 }
 
 body {
-  background: rgb(59, 197, 59)
+  background: #bef0e0
+  
+}
+.bg-light{
+  background-color: #fafafa !important;
+
+  position: relative ! important;
+  top: 0 !important;
+
+  transition: ease-out 0.1s ;
+}
+.bg-light :hover{
+  top: -3px !important;
+
+}
+.names{
+  color: #00C281 !important;
+
 }

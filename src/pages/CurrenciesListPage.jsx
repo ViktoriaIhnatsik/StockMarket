@@ -11,10 +11,10 @@ export default function CurrenciesListPage() {
     .then(data => setCurrenciesList(data))
   }, [])
   return (
-    <div className="container">
-      <h2>CurrenciesListPage</h2>
+    <div className="container  rounded ">
+      <h2 >CurrenciesListPage</h2>
       {!currenciesList && <p>Loading</p>}
-      <div className="row">
+      <div className="row  ">
         {currenciesList && Object.entries(currenciesList).map(currenciesItem =>{
           const key = currenciesItem[0];
           const value = currenciesItem[1];
