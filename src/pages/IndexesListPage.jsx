@@ -27,7 +27,6 @@ export default function IndexesListPage() {
       <div className="row">
         {indexesList && (
 
-
           Object.entries(indexesList).map(indexesItem => {
             const key = indexesItem[0]
             const value = indexesItem[1]
@@ -38,6 +37,5 @@ export default function IndexesListPage() {
           }))}
       </div>
     </div>
-    </div >
   );
 }

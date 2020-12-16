@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import graph from '../fake-graph.png'
 
 export default function MarketsCompaniesDetailPage(props) {
     const [companiesItem, setCompaniesItem] = useState(null);
@@ -15,23 +15,30 @@ export default function MarketsCompaniesDetailPage(props) {
     }, [])
 
     return (
-        <div className="container">
+        <div className="d-flex align-items-center mx-auto vh-100 w-75">
             {!companiesItem && <p>Loading</p>}
-            {companiesItem &&
-                <div className="container shadow w-50 mt-5">
-                    <h2>{companiesItem.name}</h2>
-                    <p>Market: {companiesItem.market}</p>
-                    <p>Mtd: {companiesItem.mtd}</p>
-                    <p>Price: {companiesItem.price}</p>
-                    <p>Today: {companiesItem.today}</p>
-                    <p>W1: {companiesItem.w1}</p>
-                    <p>Y3: {companiesItem.y3}</p>
-                    <p>Y5: {companiesItem.y5}</p>
-                    <p>Ytd: {companiesItem.ytd}</p>
+            {companiesItem && (
+                <div className="container col-md-12 row align-items-center">
+                    <div className="col-md-6">
+                        <img className="img-fluid border" src={graph} alt="this is a graph" />
+                    </div>
+                    <div className="col-md-6">
+                        <h2 className="names font-weight-bold">{companiesItem.name}</h2>
+
+                        <button className="btn btn-primary mt-2 mb-4">Köp</button>
+                        <button className="btn btn-danger mt-2 mb-4">Sälj</button>
+
+                        <p>Market: {companiesItem.market.toUpperCase()}</p>
+                        <p>Mtd: {companiesItem.mtd}%</p>
+                        <p>Price: {companiesItem.price}</p>
+                        <p>Today: {companiesItem.today}%</p>
+                        <p>W1: <span> {companiesItem.w1}%</span></p>
+                        <p>Y3: {companiesItem.y3}%</p>
+                        <p>Y5: {companiesItem.y5}%</p>
+                        <p>Ytd: {companiesItem.ytd}%</p>
+                    </div>
                 </div>
-            }
-
-
+            )}
         </div>
     )
 }

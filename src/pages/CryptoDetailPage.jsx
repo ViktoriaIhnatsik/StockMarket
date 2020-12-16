@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import graph from '../fake-graph.png'
 import styled from 'styled-components';
 
 const Background = styled.div`
@@ -8,36 +9,46 @@ background-color: #F2F9F4;
 export default function CryptoDetailPage(props) {
 
 
-    const [cryptoItem, setCryptoItem]= useState(null)
+    const [cryptoItem, setCryptoItem] = useState(null)
 
 
-    
 
-    useEffect(()=>{
-        const id =props.match.params.id
+
+    useEffect(() => {
+        const id = props.match.params.id
 
         const url = `https://market-data-collector.firebaseio.com/market-collector/crypto/usd/${id}.json`
 
         fetch(url)
-        .then(res => res.json())
+            .then(res => res.json())
 
-        .then (data => setCryptoItem(data))
-    },[])
+            .then(data => setCryptoItem(data))
+    }, [])
 
     return (
-        <div className="container ">
-            {!cryptoItem && <p>LOADING</p> }
+        <div className="d-flex align-items-center mx-auto vh-100 w-75">
+            {!cryptoItem && <p>Loading</p>}
+            {cryptoItem && (
+                <div className="container col-md-12 row align-items-center">
+                    <div className="col-md-6">
+                        <img className="img-fluid border" src={graph} alt="this is a graph" />
+                    </div>
+                    <div className="col-md-6">
+                        <h2 className="names font-weight-bold">{cryptoItem.name}</h2>
 
-            <Background className="container shadow rounded w-50  p-5  mt-5">
-                {cryptoItem && (
-                    <>
-                    <h2> {cryptoItem.name}</h2>
-                        <p>Price: {cryptoItem.price}</p>
-                        <p>Market: {cryptoItem.market}</p>
-                        <p>Today: {cryptoItem.today}</p>
-                    </>        
-                ) }
-            </Background>
+                        <button className="btn btn-primary mt-2 mb-4">Köp</button>
+                        <button className="btn btn-danger m-2 mb-4">Sälj</button>
+
+                        <p>Mtd: {cryptoItem.mtd}%</p>
+                        <p>Price: {cryptoItem.price} {cryptoItem.market.toUpperCase()}</p>
+                        <p>Today: {cryptoItem.today}%</p>
+                        <p>W1: <span> 0%</span></p>
+                        <p>Y3: 0%</p>
+                        <p>Y5: 0%</p>
+                        <p>Ytd: 0%</p>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
