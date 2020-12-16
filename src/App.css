@@ -3,6 +3,7 @@
   margin: 0px;
 }
 
+<<<<<<< HEAD
 body {}
 
 .h-20 {
@@ -16,3 +17,30 @@ body {}
 .row-striped:nth-of-type(odd) {
   background-color: #ffffff;
 }
+=======
+body {
+  background: #f2f9f4;
+}
+.bg-light {
+  background-color: #fafafa !important;
+
+  position: relative !important;
+  top: 0 !important;
+
+  transition: ease-out 0.1s;
+}
+.bg-light :hover {
+  top: -3px !important;
+}
+.names {
+  color: #00c281 !important;
+}
+.avanza-green {
+  background-color: #03c181;
+}
+
+.nav-text-color {
+  color: #ffffff;
+  font-weight: bold;
+}
+>>>>>>> d508f601a91427d83f51c825c645744469d4c701

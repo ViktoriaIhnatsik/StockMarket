@@ -16,10 +16,14 @@ export default function MarketsCompaniesListPage(props) {
 
 
     return (
-        <div>
+        <div className="container">
+        
             <h2>Companies List Page</h2>
 
             {!marketsCompaniesList && <p>Loading</p>}
+        <div className="row">
+
+
             {marketsCompaniesList && Object.entries(marketsCompaniesList).map(marketsCompaniesItem => {
                 const key = marketsCompaniesItem[0]
                 const value = marketsCompaniesItem[1]
@@ -27,6 +31,7 @@ export default function MarketsCompaniesListPage(props) {
                     <MarketsCompaniesItem key={key} marketsCompanies={value} />
                 )
             })}
+         </div>   
         </div>
     )
 }

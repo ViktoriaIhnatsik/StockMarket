@@ -13,9 +13,11 @@ export default function CryptoListPage() {
 
 
   return (
-    <div className="container">
-      <h2>CryptoListPage</h2>
+    <div className="bg-light">
+    <div className="container pt-5 pb-5">
+
       {!cryptoList && <p>Loading</p>}
+
       <div className="row">
         {cryptoList && Object.entries(cryptoList).map(cryptoItem => {
           const key = cryptoItem[0]
@@ -29,6 +31,7 @@ export default function CryptoListPage() {
         })}
       </div>
 
+    </div>
     </div>
   );
 }
