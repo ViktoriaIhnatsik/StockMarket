@@ -38,6 +38,5 @@ export default function IndexesListPage() {
           }))}
       </div>
     </div>
-    </div >
   );
 }

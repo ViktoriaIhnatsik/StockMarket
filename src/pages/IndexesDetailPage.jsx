@@ -21,7 +21,6 @@ export default function IndexesDetailPage(props) {
         <div>
             {!indexesItem && <p>Loading</p>}
             {indexesItem && (
-<<<<<<< HEAD
                 <div className="container col-md-12 w-100 mt-5 mx-auto row">
                     <div className="col-md-6">
                         <img className="img-fluid border" src={graph} alt="this is a graph" />
@@ -43,18 +42,6 @@ export default function IndexesDetailPage(props) {
                         <button className="btn col-md-4 btn-success m-1 d-block">Köp</button>
                         <button className="btn col-md-4 btn-danger m-1 d-block">Sälj</button>
                     </div>
-=======
-                <div className="container  w-50 mt-5 shadow ">
-                    <h2>{indexesItem.name}</h2>
-                    <p>Market: {indexesItem.market.toUpperCase()}</p>
-                    <p>Mtd: {indexesItem.mtd}</p>
-                    <p>Price: {indexesItem.price}:-</p>
-                    <p style={style}>Today: {indexesItem.today}%</p>
-                    <p style={style}>W1: <p> {indexesItem.w1}%</p></p>
-                    <p style={style}>Y3: {indexesItem.y3}%</p>
-                    <p style={style}>Y5: {indexesItem.y5}%</p>
-                    <p style={style}>Ytd: {indexesItem.ytd}%</p>
->>>>>>> d508f601a91427d83f51c825c645744469d4c701
                 </div>
             )}
         </div>

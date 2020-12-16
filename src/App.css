@@ -3,21 +3,6 @@
   margin: 0px;
 }
 
-<<<<<<< HEAD
-body {}
-
-.h-20 {
-  height: 40px;
-}
-
-.row-striped:nth-of-type(even) {
-  background-color: #efefef;
-}
-
-.row-striped:nth-of-type(odd) {
-  background-color: #ffffff;
-}
-=======
 body {
   background: #f2f9f4;
 }
@@ -26,9 +11,8 @@ body {
 
   position: relative !important;
   top: 0 !important;
-
-  transition: ease-out 0.1s;
 }
+
 .bg-light :hover {
   top: -3px !important;
 }
@@ -43,4 +27,4 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
->>>>>>> d508f601a91427d83f51c825c645744469d4c701
+
