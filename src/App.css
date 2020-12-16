@@ -3,6 +3,16 @@
   margin: 0px;
 }
 
-body {
-  background: rgb(59, 197, 59)
+body {}
+
+.h-20 {
+  height: 40px;
+}
+
+.row-striped:nth-of-type(even) {
+  background-color: #efefef;
+}
+
+.row-striped:nth-of-type(odd) {
+  background-color: #ffffff;
 }

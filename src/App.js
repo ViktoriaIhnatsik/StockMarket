@@ -1,4 +1,5 @@
 import React from 'react'
+import './App.css'
 import { Switch, Route } from 'react-router-dom'
 import NavLinkItem from './components/NavLinkItem'
 
@@ -36,7 +37,7 @@ function App() {
         <Route path="/indexes/:id" component={IndexesDetailPage}></Route>
         <Route path="/markets/:companies/:id" component={MarketsCompaniesDetailPage}></Route>
         <Route path="/markets/:companies" component={MarketsCompaniesListPage}></Route>
-        
+
 
         <Route path="/crypto">
           <CryptoListPage />
