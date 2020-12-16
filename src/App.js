@@ -16,13 +16,14 @@ import MarketsCompaniesDetailPage from './pages/MarketsCompaniesDetailPage'
 import IndexesListPage from './pages/IndexesListPage'
 import IndexesDetailPage from './pages/IndexesDetailPage'
 
+import HomePage from './pages/HomePage'
 
 
 function App() {
   return (
     <div>
 
-      <nav className="navbar navbar-expand-lg navbar-dark bg-secondary p-3">
+      <nav className="navbar navbar-expand-lg navbar-dark nav-text-color avanza-green p-3">
       <div className="container-fluid">
         <span class="navbar-brand mb-0 h1">Stock Market</span>
          <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -62,7 +63,7 @@ function App() {
         </Route>
 
         <Route path="/">
-           
+           <HomePage/>
         </Route>
         
       </Switch>
