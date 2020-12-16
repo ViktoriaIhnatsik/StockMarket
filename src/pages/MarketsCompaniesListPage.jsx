@@ -16,22 +16,22 @@ export default function MarketsCompaniesListPage(props) {
 
 
     return (
-        <div className="container">
-        
-            <h2>Companies List Page</h2>
+        <div className="bg-light">
+        <div className="container pt-5 pb-5">  
 
-            {!marketsCompaniesList && <p>Loading</p>}
+        {!marketsCompaniesList && <p>Loading</p>}
+
         <div className="row">
-
-
-            {marketsCompaniesList && Object.entries(marketsCompaniesList).map(marketsCompaniesItem => {
+                {marketsCompaniesList && Object.entries(marketsCompaniesList).map(marketsCompaniesItem => {
                 const key = marketsCompaniesItem[0]
                 const value = marketsCompaniesItem[1]
                 return (
                     <MarketsCompaniesItem key={key} marketsCompanies={value} />
                 )
             })}
-         </div>   
+         </div>  
+
         </div>
+        </div>   
     )
 }
