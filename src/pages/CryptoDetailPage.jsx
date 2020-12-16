@@ -1,4 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components';
+
+const Background = styled.div`
+background-color: #F2F9F4;
+`
 
 export default function CryptoDetailPage(props) {
 
@@ -20,27 +25,19 @@ export default function CryptoDetailPage(props) {
     },[])
 
     return (
-        <div>
+        <div className="container ">
             {!cryptoItem && <p>LOADING</p> }
 
-            <div className="container shadow w-50 mt-5 ">
+            <Background className="container shadow rounded w-50  p-5  mt-5">
                 {cryptoItem && (
                     <>
                     <h2> {cryptoItem.name}</h2>
                         <p>Price: {cryptoItem.price}</p>
-
                         <p>Market: {cryptoItem.market}</p>
                         <p>Today: {cryptoItem.today}</p>
-                        
-                       
-
-                    </>
-                    
-                    
+                    </>        
                 ) }
-
-            </div>
-            
+            </Background>
         </div>
     )
 }

@@ -20,15 +20,22 @@ import IndexesDetailPage from './pages/IndexesDetailPage'
 
 function App() {
   return (
-    <div className="container">
-      <div className="col-md-12">
-        <ul className="nav">
+    <div>
+
+      <nav className="navbar navbar-expand-lg navbar-dark bg-secondary p-3">
+      <div className="container-fluid">
+        <span class="navbar-brand mb-0 h1">Stock Market</span>
+         <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav">
+          <NavLinkItem className="active" aria-current="page" to="/" text="Home" />
           <NavLinkItem to="/crypto" text="Crypto" />
           <NavLinkItem to="/currencies" text="Currencies" />
           <NavLinkItem to="/indexes" text="Indexes" />
           <NavLinkItem to="/markets" text="Markets" />
         </ul>
       </div>
+      </div>
+      </nav>
 
       <Switch>
         <Route path="/crypto/:id" component={CryptoDetailPage}></Route>
@@ -54,7 +61,10 @@ function App() {
           <MarketsListPage />
         </Route>
 
-
+        <Route path="/">
+           
+        </Route>
+        
       </Switch>
     </div>
   );
