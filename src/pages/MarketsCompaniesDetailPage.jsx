@@ -20,7 +20,7 @@ export default function MarketsCompaniesDetailPage(props) {
         <div className="container">
             {!companiesItem && <p>Loading</p>}
             {companiesItem &&
-                <div className="container shadow w-50 mt-5">
+                <div className="container shadow w-50 mt-5 bg-light">
                     <div className ="row">
                         <div className="col-sm">
                             <h2>{companiesItem.name}</h2>
