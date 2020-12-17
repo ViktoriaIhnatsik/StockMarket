@@ -3,9 +3,6 @@
   margin: 0px;
 }
 
-<<<<<<< HEAD
-body {}
-
 .h-20 {
   height: 40px;
 }
@@ -17,10 +14,11 @@ body {}
 .row-striped:nth-of-type(odd) {
   background-color: #ffffff;
 }
-=======
+
 body {
   background: #f2f9f4;
 }
+
 .bg-light {
   background-color: #fafafa !important;
 
@@ -29,12 +27,19 @@ body {
 
   transition: ease-out 0.1s;
 }
+
 .bg-light :hover {
   top: -3px !important;
 }
+
+.h-60 {
+  height: 60vh;
+}
+
 .names {
   color: #00c281 !important;
 }
+
 .avanza-green {
   background-color: #03c181;
 }
@@ -43,4 +48,3 @@ body {
   color: #ffffff;
   font-weight: bold;
 }
->>>>>>> d508f601a91427d83f51c825c645744469d4c701
