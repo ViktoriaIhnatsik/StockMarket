@@ -14,11 +14,11 @@ export default function IndexesListPage() {
   }, [])
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 bg-light">
 
       {!indexesList && <p>Loading</p>}
       <div className="row">
-        <ul className="col-md-10 mw-100 list-inline mx-auto align-items-center d-flex justify-content-center p-0">
+        <ul className="col-md-10 mw-100 list-inline mx-auto align-items-center lightgray p-3 d-flex justify-content-center">
           <li className="col-md-3 mr-3 text-left"><strong>Index</strong></li>
           <li className="col-md-3 ml-5 mr-3"><strong>+/-</strong></li>
           <li className="col-md-3 ml-3 text-right"><strong>Price today</strong></li>

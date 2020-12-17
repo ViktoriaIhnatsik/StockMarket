@@ -3,8 +3,21 @@
   margin: 0px;
 }
 
+
 .h-20 {
   height: 40px;
+}
+
+.lightgray {
+  background-color: rgb(165, 160, 160);
+}
+
+.row-striped:nth-of-type(even) {
+  background-color: #efefef;
+}
+
+.row-striped:nth-of-type(odd) {
+  background-color: #ffffff;
 }
 
 body {
@@ -37,4 +50,5 @@ body {
 .nav-text-color {
   color: #ffffff;
   font-weight: bold;
+
 }

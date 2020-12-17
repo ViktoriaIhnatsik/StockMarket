@@ -1,20 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { Hoover } from "../components/HooverStyle";
 import stats from '../stats.png'
 import bank from '../bank.png'
 import bars from '../bars.png'
 import money from '../money.png'
 
-const Hoover = styled.div`
-  &:hover {
-    background-color: #03c181;
-    p {
-      color: white;
-      font-weight: bold;
-    }
-  }
-`;
+
 
 export default function HomePage() {
   return (
