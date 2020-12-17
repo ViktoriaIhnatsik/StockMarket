@@ -4,8 +4,8 @@ import MarketsCompaniesItem from '../components/MarketsCompaniesItem'
 export default function MarketsCompaniesListPage(props) {
     const [marketsCompaniesList, setMarketsCompaniesList] = useState(null)
 
+    const id = props.match.params.companies
     useEffect(() => {
-        const id = props.match.params.companies
         const url = `https://market-data-collector.firebaseio.com/market-collector/markets/${id}.json`
 
         fetch(url)
@@ -17,7 +17,8 @@ export default function MarketsCompaniesListPage(props) {
 
     return (
         <div className="bg-light">
-        <div className="container pt-5 pb-5">  
+        <div className="container pt-5 pb-5">
+        <h1 classname="">{id}</h1>  
 
         {!marketsCompaniesList && <p>Loading</p>}
 
