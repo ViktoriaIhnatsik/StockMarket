@@ -1,27 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import graph from '../fake-graph.png'
-import styled from 'styled-components';
-
-const Background = styled.div`
-background-color: #F2F9F4;
-`
 
 export default function CryptoDetailPage(props) {
 
-
     const [cryptoItem, setCryptoItem] = useState(null)
-
-
-
 
     useEffect(() => {
         const id = props.match.params.id
-
         const url = `https://market-data-collector.firebaseio.com/market-collector/crypto/usd/${id}.json`
 
         fetch(url)
             .then(res => res.json())
-
             .then(data => setCryptoItem(data))
     }, [])
 

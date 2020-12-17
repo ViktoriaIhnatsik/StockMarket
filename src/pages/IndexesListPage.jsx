@@ -14,7 +14,7 @@ export default function IndexesListPage() {
   }, [])
 
   return (
-    <div className="mt-5 bg-light">
+    <div className="mt-5 light-green">
 
       {!indexesList && <p>Loading</p>}
       <div className="row">

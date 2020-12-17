@@ -12,7 +12,7 @@ export default function HomePage() {
   return (
     <div className="vh-100">
       <div className="row justify-content-center mt-5 ">
-        <h1 classname="">Stock market</h1>
+        <h1 className="">Stock market</h1>
       </div>
 
       <div className="container  col-md-12 text-center">

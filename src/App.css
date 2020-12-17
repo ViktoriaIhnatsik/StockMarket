@@ -3,7 +3,6 @@
   margin: 0px;
 }
 
-
 .h-20 {
   height: 40px;
 }
@@ -20,13 +19,12 @@
   background-color: #ffffff;
 }
 
-body {
-  background: #f2f9f4;
+.light-green {
+  background-color: #f1f9f3;
 }
 
 .bg-light {
   background-color: #fafafa !important;
-
   position: relative !important;
   top: 0 !important;
 }

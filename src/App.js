@@ -26,7 +26,7 @@ function App() {
 
       <nav className="navbar navbar-expand-lg navbar-dark nav-text-color avanza-green p-3">
       <div className="container-fluid">
-        <span class="navbar-brand mb-0 h1">Stock Market</span>
+        <span className="navbar-brand mb-0 h1">Stock Market</span>
          <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav">
           <NavLinkItem className="active" aria-current="page" to="/" text="Home" />

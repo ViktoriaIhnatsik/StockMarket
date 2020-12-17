@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import styled from "styled-components";
 
 const Hoover = styled.div`
+  background-color: #ffffff;
+
   &:hover {
     background-color: #03c181;
     p {
@@ -22,13 +24,14 @@ const Color = styled.p`
 
 export default function MarketsItem({ markets }) {
 
-    return (
-         <Hoover className="col-md-3 shadow p-3 m-3">
-            <Link
-                className="btn  btn-block"
-                to={`/markets/${markets}`}>
-               <Color>{markets}</Color> 
-            </Link>
-        </Hoover>
-    )
+  return (
+    <Hoover className="col-md-3 shadow p-3 m-3">
+      <Link
+        className="btn  btn-block"
+        to={`/markets/${markets}`}>
+        <p>{markets}</p>
+        {/*<Color>{markets}</Color>*/}
+      </Link>
+    </Hoover>
+  )
 }

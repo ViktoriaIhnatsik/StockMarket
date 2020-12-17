@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+document.body.style='background: #f1f9f3';
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

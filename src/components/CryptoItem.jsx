@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Hoover = styled.div`
+  background-color: #ffffff;
+  
   &:hover {
     background-color: #03c181;
     p {

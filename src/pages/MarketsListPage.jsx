@@ -14,7 +14,7 @@ export default function MarketsListPage() {
   }, [])
 
   return (
-     <div className="bg-light vh-100">
+     <div className="light-green vh-100">
      <div className="container pt-5 pb-5">
       
       {!marketsList && <p>Loading</p>}
