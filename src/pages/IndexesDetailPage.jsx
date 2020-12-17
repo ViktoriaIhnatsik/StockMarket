@@ -18,10 +18,10 @@ export default function IndexesDetailPage(props) {
     }, [])
 
     return (
-        <div className="d-flex align-items-center mx-auto vh-100 w-75">
+        <div className="d-flex align-items-center mx-auto vh-100  p-5 w-75">
             {!indexesItem && <p>Loading</p>}
             {indexesItem && (
-                <div className="container col-md-12 row align-items-center">
+                <div className="container col-md-12 row shadow bg-white m-5 p-5 align-items-center">
                     <div className="col-md-6">
                         <img className="img-fluid border" src={graph} alt="this is a graph" />
                     </div>

@@ -18,7 +18,7 @@ export default function MarketsCompaniesDetailPage(props) {
         <div className="d-flex align-items-center mx-auto vh-100 w-75">
             {!companiesItem && <p>Loading</p>}
             {companiesItem && (
-                <div className="container col-md-12 row align-items-center">
+                <div className="container col-md-12 row align-items-center shadow bg-white m-5 p-5">
                     <div className="col-md-6">
                         <img className="img-fluid border" src={graph} alt="this is a graph" />
                     </div>
