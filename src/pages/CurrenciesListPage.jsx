@@ -10,10 +10,13 @@ export default function CurrenciesListPage() {
     .then(res => res.json())
     .then(data => setCurrenciesList(data))
   }, [])
+
   return (
-    <div className="container">
-      <h2>CurrenciesListPage</h2>
+    <div className="bg-light">
+    <div className="container pt-5 pb-5">
+
       {!currenciesList && <p>Loading</p>}
+
       <div className="row">
         {currenciesList && Object.entries(currenciesList).map(currenciesItem =>{
           const key = currenciesItem[0];
@@ -21,6 +24,8 @@ export default function CurrenciesListPage() {
           return <CurrenciesItem key={key} currencies={value} />
         })}
       </div>
-    </div>
+      
+      </div>
+     </div>
   );
 }
