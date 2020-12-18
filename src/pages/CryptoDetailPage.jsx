@@ -25,8 +25,8 @@ export default function CryptoDetailPage(props) {
                     <div className="col-md-6">
                         <h2 className="names font-weight-bold">{cryptoItem.name}</h2>
 
-                        <button className="btn btn-primary mt-2 mb-4">Köp</button>
-                        <button className="btn btn-danger m-2 mb-4">Sälj</button>
+                        <button className="btn btn-primary mtrb-2">Köp</button>
+                        <button className="btn btn-danger m-2">Sälj</button>
 
                         <p>Mtd: {cryptoItem.mtd}%</p>
                         <p>Price: {cryptoItem.price} {cryptoItem.market.toUpperCase()}</p>

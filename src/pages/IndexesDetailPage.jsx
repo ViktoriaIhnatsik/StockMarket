@@ -28,8 +28,8 @@ export default function IndexesDetailPage(props) {
                     <div className="col-md-6">
                         <h2 className="names font-weight-bold">{indexesItem.name}</h2>
 
-                        <button className="btn btn-primary mt-2 mb-4">Köp</button>
-                        <button className="btn btn-danger mt-2 mb-4">Sälj</button>
+                        <button className="btn btn-primary mtrb-2">Köp</button>
+                        <button className="btn btn-danger m-2">Sälj</button>
 
                         <p>Mtd: {indexesItem.mtd}%</p>
                         <p>Price: {indexesItem.price} {indexesItem.market.toUpperCase()}K</p>

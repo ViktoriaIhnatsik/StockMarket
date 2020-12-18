@@ -24,8 +24,8 @@ export default function MarketsCompaniesDetailPage(props) {
                     <div className="col-md-6">
                         <h2 className="names font-weight-bold">{companiesItem.name}</h2>
 
-                        <button className="btn btn-primary mt-2 mb-4">Köp</button>
-                        <button className="btn btn-danger mt-2 mb-4">Sälj</button>
+                        <button className="btn btn-primary mtrb-2">Köp</button>
+                        <button className="btn btn-danger m-2">Sälj</button>
 
                         <p>Market: {companiesItem.market.toUpperCase()}</p>
                         <p>Mtd: {companiesItem.mtd}%</p>
