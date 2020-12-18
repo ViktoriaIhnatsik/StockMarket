@@ -25,7 +25,7 @@ const Color = styled.p`
 
 export default function CurrenciesItem({ currencies }) {
   return (
-    <Hoover className="col-md-2 shadow p-3 m-3">
+    <Hoover className="col-md-2 shadow rounded p-3 m-3">
       <Link className="btn btn-block" to={`/currencies/${currencies.ticker}`}>
         <Color>{currencies.name}</Color>
       </Link>

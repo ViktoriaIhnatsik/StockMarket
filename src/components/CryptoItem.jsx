@@ -24,7 +24,7 @@ const Color = styled.p`
 
 export default function CryptoItem({ crypto }) {
   return (
-    <Hoover className="col-md-2 shadow p-3 m-3">
+    <Hoover className="col-md-2 shadow rounded p-3 m-3">
       <Link className="btn btn-block" to={`/crypto/${crypto.ticker}`}>
         <Color>{crypto.name}</Color>
       </Link>

@@ -24,7 +24,7 @@ const Color = styled.p`
 
 export default function MarketsCompaniesItem({ marketsCompanies }) {
   return (
-    <Hoover className="col-md-2 shadow p-2 m-3">
+    <Hoover className="col-md-2 shadow rounded p-2 m-3">
       <Link
         className="btn  btn-block"
         to={`/markets/${marketsCompanies.market}/${marketsCompanies.ticker}`}>
