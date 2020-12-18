@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import MarketsItem from '../components/MarketsItem';
 
 export default function MarketsListPage() {
- const [marketsList, setMarketsList] = useState(null)
+  const [marketsList, setMarketsList] = useState(null)
 
   useEffect(() => {
     const url = "https://market-data-collector.firebaseio.com/market-collector/markets.json"
@@ -14,24 +14,24 @@ export default function MarketsListPage() {
   }, [])
 
   return (
-     <div className="light-green vh-100">
-     <div className="container pt-5 pb-5">
-      
-      {!marketsList && <p>Loading</p>}
+    <div className="vh-100">
+      <div className="container pt-5 pb-5">
 
-       <div className="row justify-content-center">
+        {!marketsList && <p>Loading</p>}
 
-        {marketsList && Object.entries(marketsList).map(marketsItem => {
-        const key = marketsItem[0]
-        const name = marketsItem[0]
+        <div className="row justify-content-center">
 
-        return (
-          <MarketsItem key={key} markets={name} />
-        )
-      })}
-     </div>
-     
-    </div>
+          {marketsList && Object.entries(marketsList).map(marketsItem => {
+            const key = marketsItem[0]
+            const name = marketsItem[0]
+
+            return (
+              <MarketsItem key={key} markets={name} />
+            )
+          })}
+        </div>
+
+      </div>
     </div>
   );
 }

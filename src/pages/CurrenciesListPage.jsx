@@ -12,20 +12,18 @@ export default function CurrenciesListPage() {
   }, [])
 
   return (
-    <div className="light-green">
-      <div className="container pt-5 pb-5">
+    <div className="container pt-5 pb-5">
 
-        {!currenciesList && <p>Loading</p>}
+      {!currenciesList && <p>Loading</p>}
 
-        <div className="row">
-          {currenciesList && Object.entries(currenciesList).map(currenciesItem => {
-            const key = currenciesItem[0];
-            const value = currenciesItem[1];
-            return <CurrenciesItem key={key} currencies={value} />
-          })}
-        </div>
-
+      <div className="row">
+        {currenciesList && Object.entries(currenciesList).map(currenciesItem => {
+          const key = currenciesItem[0];
+          const value = currenciesItem[1];
+          return <CurrenciesItem key={key} currencies={value} />
+        })}
       </div>
+
     </div>
   );
 }

@@ -23,16 +23,6 @@
   background-color: #f1f9f3;
 }
 
-.bg-light {
-  background-color: #fafafa !important;
-  position: relative !important;
-  top: 0 !important;
-}
-
-.bg-light :hover {
-  top: -3px !important;
-}
-
 .h-60 {
   height: 60vh;
 }
