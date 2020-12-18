@@ -29,8 +29,7 @@ export default function MarketsItem({ markets }) {
       <Link
         className="btn  btn-block"
         to={`/markets/${markets}`}>
-        <p>{markets}</p>
-        {/*<Color>{markets}</Color>*/}
+        <Color>{markets}</Color>
       </Link>
     </Hoover>
   )
