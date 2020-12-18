@@ -3,7 +3,6 @@ import graph from '../fake-graph.png'
 
 export default function MarketsCompaniesDetailPage(props) {
     const [companiesItem, setCompaniesItem] = useState(null);
-    console.log(props)
     useEffect(() => {
         const id = props.match.params.id
         const companies = props.match.params.companies
