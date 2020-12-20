@@ -30,7 +30,6 @@ export default function IndexesListPage() {
           Object.entries(indexesList).map(indexesItem => {
             const key = indexesItem[0]
             const value = indexesItem[1]
-
             return (
               <IndexesItem key={key} indexes={value} />
             )

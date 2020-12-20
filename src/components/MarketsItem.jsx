@@ -1,36 +1,44 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import styled from "styled-components";
+import { Hoover } from "../components/HooverStyle";
 
-const Hoover = styled.div`
-  background-color: #ffffff;
-
-  &:hover {
-    background-color: #03c181;
-    p {
-      color: white;
-      font-weight: bold;
-    }
-  }
-`;
-const Color = styled.p`
-  font-size: 16px;
-
-  &:hover {
-    color: white;
-    font-weight: bold;
-  }
-`;
-
+const marketObject = {
+"euronext-paris": "Euronext Paris",
+"first-north": "First North",
+"frankfurter-wertpapierborse": "Frankfurter-Wertpapierborse",
+"helsingforsborsen": "Helsingforsbörsen",
+"kopenhamnsborsen": 'Köpenhamnsbörsen',
+"nasdaq": "Nasdaq",
+"new-york-stock-exchange": "New York Stock Exchange",
+"ngm-equity": "Ngm Equity",
+"ngm-nordic-mtf": "Ngm Nordic Mtf",
+"osloborsen": "Oslobörsen",
+"spotlight": "Spotlight",
+"stockholmsborsen": "Stockholmsbörsen"
+};
 export default function MarketsItem({ markets }) {
 
+  let newMarkets
+  
+    Object.entries(marketObject).forEach(([keyMarket, valueMarket]) => { //loop through keys array
+      if (keyMarket === markets) {
+        newMarkets = valueMarket
+      }
+    });
+
   return (
-    <Hoover className="col-md-3 shadow rounded p-3 m-3">
+    <div className="col-md-10 mx-auto mw-100 p-0 m-0 row-striped">
+    <Hoover className="col-md-12 shadow rounded pr-5 mr-3">
       <Link
-        className="btn  btn-block"
-        to={`/markets/${markets}`}>
-        <Color>{markets}</Color>
+          className="btn btn-block p-0"
+            to={`/markets/${markets}`}>
+          <ul className="col-md-12 mw-100 list-inline d-flex align-content-left p-0 m-0">
+            <li className="col-md-12">
+              <p>{newMarkets}</p>
+            </li>
+          </ul>
       </Link>
     </Hoover>
-  )
+    </div>
+ )
 }
